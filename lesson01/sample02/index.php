@@ -1,3 +1,12 @@
+<?php
+$value = '変数に保存した値です';
+setcookie(
+    'message',
+    'Cokkieに保存した値です',
+    time() + 60 * 60 * 24 * 14
+);
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -9,18 +18,7 @@
 </head>
 
 <body>
-    <?php
-    $json_sample = [
-        "title" => "jsonサンプル",
-        "items" => [
-            "林檎",
-            "みかん"
-        ]
-    ];
-
-    $json = json_encode($json_sample,JSON_UNESCAPED_UNICODE);
-    echo $json
-    ?>
+    <a href="page02.php">2ページ目へ</a>
 </body>
 
 </html>
