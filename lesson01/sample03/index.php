@@ -2,6 +2,7 @@
 session_start();
 session_regenerate_id();
 echo ("hello");
+echo ("world");
 $_SESSION['message'] = 'セッションに保存した値です'
 ?>
 
