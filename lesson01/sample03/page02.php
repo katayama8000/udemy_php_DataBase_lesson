@@ -1,8 +1,5 @@
 <?php
 session_start();
-session_regenerate_id();
-
-$_SESSION['message'] = 'セッションに保存した値です'
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +13,7 @@ $_SESSION['message'] = 'セッションに保存した値です'
 </head>
 
 <body>
-    <a href="page02.php">2ページ目へ</a>
+セッション:<?php echo $_SESSION['message'];?>
 </body>
 
 </html>
