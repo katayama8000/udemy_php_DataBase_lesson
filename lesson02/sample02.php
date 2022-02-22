@@ -15,7 +15,7 @@
     $records = $db->query('select*from my_items');
     if($records){
         while($record = $records->fetch_assoc()){
-            echo $record['item_name'] . '<br>';
+            echo $record['count(*)'] . '<br>';
         }
     }
     echo '削除';
